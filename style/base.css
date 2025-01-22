@@ -1,0 +1,512 @@
+* {
+    font-family: "Roboto Slab", serif;
+}
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Site background color */
+}
+
+/* Header styling */
+.header {
+    background-color: #007BFF;
+    /* Blue background */
+    padding: 20px 0;
+    /* Internal spacing */
+    display: flex;
+    flex-direction: column;
+    /* Align vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 120px;
+    /* Image size */
+    height: 150px;
+    /* Round image */
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #000;
+    /* Black background for the navigation bar */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 20px 120px;
+    /* Spacing between buttons */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    /* Button size */
+    position: relative;
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1);
+    /* Show underline on hover */
+    transform-origin: left;
+}
+
+/* Main heading styling */
+.main1 {
+    position: relative;
+    /* Needed for positioning ::before */
+    margin-left: 100px;
+    /* Left margin spacing */
+    padding-bottom: 10px;
+    /* Space between content and underline */
+}
+
+.main1::before {
+    content: "";
+    /* Required for ::before to work */
+    position: absolute;
+    left: 0;
+    /* Start at the beginning of the element */
+    bottom: 0;
+    width: calc(100% - 100px);
+    /* Adjust underline width */
+    height: 2px;
+    /* Define line height */
+    background-color: black;
+    /* Underline color */
+}
+
+/* Container for cards */
+.cards-container {
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: space-between;
+    /* Space cards evenly */
+    gap: 20px;
+    /* Spacing between cards */
+    flex-wrap: wrap;
+    /* Allow cards to break onto the next line on smaller screens */
+    margin: 0 90px;
+    /* Left and right margin spacing */
+}
+
+/* Styling individual cards */
+.card {
+    border: 2px solid #000;
+    /* Black border */
+    padding: 20px;
+    /* Internal spacing */
+    background-color: #fff;
+    /* White background */
+    flex: 1 1 45%;
+    /* Flexible width to take up 45% of the container */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+    margin: 10px;
+    /* Spacing between cards */
+}
+
+/* Card heading styling */
+.card h2 {
+    background-color: #000;
+    /* Black background */
+    color: white;
+    /* White text color */
+    padding: 10px;
+    /* Internal spacing */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Link styling within cards */
+.card ul {
+    list-style: none;
+    /* Remove default list markers */
+    padding: 0;
+    /* Remove padding */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+.card ul li a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #000;
+    /* Link color */
+    font-size: 18px;
+    /* Font size */
+}
+
+/* Footer styling */
+footer {
+    background-color: #007BFF;
+    /* Blue background */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center align content */
+    padding: 20px;
+    /* Internal spacing */
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    /* Spacing between paragraphs */
+}
+
+/* Yellow text color for Last modified */
+#lastModified {
+    margin: 10px;
+    color: yellow;
+    /* Yellow color */
+}
+
+
+/* General Styling */
+* {
+    font-family: "Roboto Slab", serif;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Site background color */
+}
+
+/* Header Styling */
+.header {
+    background-color: #007BFF;
+    /* Blue background */
+    padding: 20px 0;
+    /* Internal spacing */
+    display: flex;
+    flex-direction: column;
+    /* Align vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 120px;
+    /* Image size */
+    height: 150px;
+    /* Round image */
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000;
+    /* Black background for the navigation bar */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 20px 120px;
+    /* Spacing between buttons */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    /* Button size */
+    position: relative;
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1);
+    /* Show underline on hover */
+    transform-origin: left;
+}
+
+/* Main Heading Styling */
+.main1 {
+    position: relative;
+    /* Needed for positioning ::before */
+    margin-left: 100px;
+    /* Left margin spacing */
+    padding-bottom: 10px;
+    /* Space between content and underline */
+}
+
+.main1::before {
+    content: "";
+    /* Required for ::before to work */
+    position: absolute;
+    left: 0;
+    /* Start at the beginning of the element */
+    bottom: 0;
+    width: calc(100% - 100px);
+    /* Adjust underline width */
+    height: 2px;
+    /* Define line height */
+    background-color: black;
+    /* Underline color */
+}
+
+/* Container for Cards */
+.cards-container {
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: space-between;
+    /* Space cards evenly */
+    gap: 20px;
+    /* Spacing between cards */
+    flex-wrap: wrap;
+    /* Allow cards to break onto the next line on smaller screens */
+    margin: 0 90px;
+    /* Left and right margin spacing */
+}
+
+/* Styling Individual Cards */
+.card {
+    border: 2px solid #000;
+    /* Black border */
+    padding: 20px;
+    /* Internal spacing */
+    background-color: #fff;
+    /* White background */
+    flex: 1 1 45%;
+    /* Flexible width to take up 45% of the container */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+    margin: 10px;
+    /* Spacing between cards */
+}
+
+/* Card Heading Styling */
+.card h2 {
+    background-color: #000;
+    /* Black background */
+    color: white;
+    /* White text color */
+    padding: 10px;
+    /* Internal spacing */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Link Styling within Cards */
+.card ul {
+    list-style: none;
+    /* Remove default list markers */
+    padding: 0;
+    /* Remove padding */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+.card ul li a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #000;
+    /* Link color */
+    font-size: 18px;
+    /* Font size */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007BFF;
+    /* Blue background */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center align content */
+    padding: 20px;
+    /* Internal spacing */
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    /* Spacing between paragraphs */
+}
+
+/* Yellow Text Color for Last Modified */
+#lastModified {
+    margin: 10px;
+    color: yellow;
+    /* Yellow color */
+}
+
+/* Mobile View (Max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Adjustments for the header */
+    .header {
+        padding: 15px 10px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    /* Navbar adjustments for mobile */
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    /* Cards in column for mobile */
+    .cards-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        padding: 15px 10px;
+    }
+
+    #lastModified {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+
+/* Desktop View (Min-width: 769px) */
+@media (min-width: 769px) {
+
+    /* Adjustments for header */
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    /* Navbar adjustments for larger screens */
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin: 10px 20px;
+    }
+
+    .nav-list a {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+    }
+
+    /* Cards in row for larger screens */
+    .cards-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Footer adjustments for larger screens */
+    footer {
+        padding: 20px 10px;
+    }
+
+    #lastModified {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
