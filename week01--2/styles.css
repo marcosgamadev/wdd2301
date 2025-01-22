@@ -128,3 +128,62 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+
+#community {
+    padding: 2rem 1rem;
+    background-color: #e6f2ff;
+}
+
+#community h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #004a99;
+}
+
+#scenarios {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#scenarios h2 {
+    color: #004a99;
+    margin-bottom: 1rem;
+}
+
+#scenarios p {
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para os quadros das perguntas */
+.scenario {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scenario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scenario h3 {
+    color: #004a99;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.scenario p {
+    color: #666;
+    font-size: 1rem;
+}
